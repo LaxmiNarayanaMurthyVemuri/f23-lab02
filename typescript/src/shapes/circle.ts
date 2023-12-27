@@ -1,8 +1,8 @@
-function circle(radius: number): Shape {
+function circle(sideLen: number): Shape {
     return {
-        radius,
+        sideLen,
         computeArea: function (): number {
-            return Math.PI * radius * radius
+            return Math.PI * sideLen * sideLen
         }
     }
 }

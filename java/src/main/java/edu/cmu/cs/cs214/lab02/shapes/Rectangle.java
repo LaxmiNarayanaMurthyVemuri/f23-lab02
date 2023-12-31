@@ -4,12 +4,12 @@ public class Rectangle implements Shape {
     private double height;
     private double width;
     
-    public Rectangle(double height, double width){
+    public Rectangle(final double height, final double width) {
         this.height = height;
         this.width = width;
     }
 
-    public double getArea() {
+    public final double getArea() {
         return height * width;
     }
 }

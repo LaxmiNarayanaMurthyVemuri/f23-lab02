@@ -1,8 +1,8 @@
-function circle(sideLen: number): Shape {
+import { Shape } from './shape.js';
+function circle(radius: number): Shape {
     return {
-        sideLen,
         computeArea: function (): number {
-            return Math.PI * sideLen * sideLen
+            return Math.PI * radius * radius
         }
     }
 }
